@@ -5,6 +5,7 @@ import azure.functions as func
 
 app = func.FunctionApp()
 
+app.function_name = "timer_scraper_actions"
 @app.schedule(schedule="0 */5 * * * *", arg_name="myTimer", run_on_startup=True,
               use_monitor=False) 
 def timer_trigger_actions(myTimer: func.TimerRequest) -> None:
