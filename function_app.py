@@ -9,4 +9,4 @@ def timer_trigger_actions(myTimer: func.TimerRequest) -> None:
     if myTimer.past_due:
         logging.info('The timer is past due!')
 
-    logging.info('Python code is executing, timer trigger function executed.')
+    logging.info('Python code is updating soon, timer trigger function executed.')
